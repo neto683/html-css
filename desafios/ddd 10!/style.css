@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+  font-family:destaque;
+  src: url(fontes/idroid.otf);
+}
+:root{
+ --cor0:#618BFF;
+ --cor01:#1453FF;
+ --cor02:#1042CC;
+ --cor03:#202C85;
+ --cor04:#0A1880;
+
+ --fonte-padrão:'Bebas Neue';
+ --fonte-destaque:'destaque';
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+header{
+  background-image: linear-gradient(to top, var(--cor04),var(--cor0));
+  text-align: center;
+  min-height: 200px;
+}
+header > h1{
+  font-family:var(--fonte-padrão);
+  color: white;
+  margin-bottom: 20px;
+ padding-top: 15px;
+ font-size: 2.8em;
+}
+header > p{
+  color: white;
+  font-family: var(--fonte-padrão);
+  font-size: 1.2em;
+}
+nav {
+  background-color: var(--cor04);
+  padding: 10px;
+}
+nav > a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: auto;
+  margin-left: 10px;
+  margin-bottom: px;
+}
+nav > a:hover{
+  background-color: var(--cor02);
+  border-radius: 5px;
+  transition: 1s;
+}
+body{
+  background-color: wheat;
+}
+main{
+  background-color: white;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+main img{
+  max-width: 100%;
+}
+main h1{
+  font-family: var(--fonte-destaque);
+  color: var(--cor03);
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+main h2{
+  background-image: linear-gradient(to right, var(--cor0),transparent);
+  font-family: var(--fonte-destaque);
+  font-size: 1.5em;
+  color: var(--cor03);
+
+}
+main p{
+  text-align: justify;
+  text-indent: 20px;
+  line-height: 2em;
+}
+img.imagem{
+  display: block;
+  margin: auto;
+  max-width:50%;
+}
+aside{
+  background-color: var(--cor0);
+  padding: 10px;
+  border-radius: 10px;
+}
+aside h3{
+  background-color: var(--cor04);
+  color: white;
+  margin: -10px -10px 0px -10px;
+  padding: 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+aside p{
+padding: 10px;
+margin-top: 10px;
+}
+
+aside > ul{
+  list-style-position: inside;
+  columns: 2;
+}
+footer{
+  background-color: var(--cor04);
+  color: white;
+  text-align: center;
+}
+div.video{
+  background-color: var(--cor04);
+  margin: 20px -20px 20px -20px;
+  padding: 20px;
+  padding-bottom: 50%;
+  position:relative;
+  
+}
+div > iframe{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
