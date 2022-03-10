@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela</title>
+  <style>
+table{
+border-collapse: collapse;
+width: 800px;
+}
+td,th{
+  border: 1px solid black;
+  padding: 10px;
+}
+th{
+  background-color: gray;
+  color: white;
+}
+  </style>
+<body>
+  <table>
+    <thead>
+      <th scope="col">Áreas</th>
+      <th scope="col">Disciplinas</th>
+      <th scope="colgroup">Notas </th>
+      <th>Nota 1</th>
+      <th>Nota 2</th>
+      <th scope="col">Medias</th>
+    </thead>
+    <tbody>
+      <tr>
+        <th rowspan="4" style="background-color: white; color: black;" scope="rowgroup">Exatas</th>
+        <td>Matematica</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <td>Física</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <td>Quimica</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <td>Biologia</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <th colspan="4" scope="row">Medias de Exatas</th>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <th rowspan="2" style="background-color: white; color: black;" scope="rowgroup">Humanas</th>
+        <td>História</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <td>Geografia</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      </tr>
+      <tr>
+        <th colspan="4" scope="row">Medias de Humans</th>
+        <td>0.0</td>
+    </tbody>
+  </table>
+</body>
+</html>
