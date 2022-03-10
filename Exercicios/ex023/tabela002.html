@@ -10,6 +10,12 @@
       padding: 10px;
       font-family: 'Courier New', Courier, monospace;
       border-collapse: collapse;
+      width: 500px;
+    }
+  
+
+    tbody > tr:nth-child(2n){
+      background-color: gray;
     }
     th{
       background-color: gray;
@@ -17,6 +23,7 @@
     }
     td,th{
       border: 1px solid black;
+      text-align: center;
     }
     td.num{
       text-align: right;
@@ -28,9 +35,9 @@
   <table>
     <thead>
        <tr>
-         <th>Estado/Municipio</th>
-          <th>2016</th>
-          <th>2017</th>
+         <th scope="col">Estado/Municipio</th>
+          <th scope="col" style="width: 50px;">2016</th>
+          <th scope="col" style="width: 50px;">2017</th>
        </tr>
       
     </thead>
@@ -66,7 +73,7 @@
     <tfoot>
       <tr>
         <th></th>
-        <th>oi</th>
+        <th scope="row">total</th>
         <td class="num">99999</td>
       </tr>
     </tfoot>
