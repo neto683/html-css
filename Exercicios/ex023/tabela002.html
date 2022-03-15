@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela</title>
+  <style>
+    table{
+      padding: 10px;
+      font-family: 'Courier New', Courier, monospace;
+      border-collapse: collapse;
+      width: 500px;
+    }
+  
+
+    tbody > tr:nth-child(2n){
+      background-color: gray;
+    }
+    th{
+      background-color: gray;
+      color: white;
+    }
+    td,th{
+      border: 1px solid black;
+      text-align: center;
+    }
+    td.num{
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <h1>Uso de tabelas grandes</h1>
+  <table>
+    <thead>
+       <tr>
+         <th scope="col">Estado/Municipio</th>
+          <th scope="col" style="width: 50px;">2016</th>
+          <th scope="col" style="width: 50px;">2017</th>
+       </tr>
+      
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>pará</td>
+        <td class="num"> 8.305.359</td>
+        <td class="num" class="num"> 8.400.056</td>
+      </tr>
+      <tr>
+        <td>Abaetetuba</td>
+        <td class="num">151.934</td>
+        <td class="num">153.380</td>
+      </tr>
+          <tr>
+            <td>Abel Figueiredo</td>
+            <td class="num">7.179	</td>
+            <td class="num">7.231</td>
+          </tr>
+          <tr>
+            <td>Acará</td>
+            <td class="num">54.080</td>
+            <td class="num">54.096</td>
+          </tr>
+          <tr>
+            <td>Afuá</td>
+            <td class="num">37.778</td>
+            <td class="num">38.144</td>
+          </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <th></th>
+        <th scope="row">total</th>
+        <td class="num">99999</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

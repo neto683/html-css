@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+ 
+  </style>
+</head>
+<body>
+  <form method="post">
+    <fieldset>
+      <legend>Identificação do usuario</legend>
+      <p><label for="cnome">Nome:</label> <input type="text" size="20" maxlength="35" placeholder="Nome Completo" id="cnome"></p>
+      <p><label for="csenha">Senha:</label> <input type="password" size="20" maxlength="16" placeholder="Senha" id="csenha"></p>
+      <p><label for="cemail">E-mail:</label> <input type="email" size="20" maxlength="30" placeholder="E-mail" id="cemail"></p>
+      <fieldset>
+        <legend>Sexo</legend>
+         <input type="radio" name="sexo" id="masc" checked> <label for="masc" >Mascolino</label><br>
+          <input type="radio"name="sexo" id="fem"> <label for="fem">Feminino</label>
+      </fieldset>
+      <p><label for="cdata">Data de Nascimento:</label> <input type="date" name="tdata" id="cdata"></p>
+    </fieldset> 
+    <fieldset>
+      <legend>Endereço do Usuario</legend>
+      <p><label for="cendereço">Lagradouro:</label> <input type="text" size="15" maxlength="20" placeholder="Endereço" id="cendereço"></p>
+      <p><label for="cnumero">Numero:</label> <input type="number" name="tnumero" id="cnumero" min="0" max="100" placeholder="Nº"></p>
+      <p><label for="tcidade">Cidade:</label> <select name="dcidade" id="tcidade">
+        <optgroup label="piaui">
+          <option >cocal</option>
+          <option >parnaiba</option>
+        </optiongroup>
+        <optgroup label="sei la">
+          <option >fortaleza</option>
+          <option >minas gerais</option>
+        </optgroup>
+      </select></p>
+      <p><label for="cestado">Estado: <input type="text" name="testado" size="20" maxlength="20" placeholder="Estado" id="cestado" list="estado"><datalist id="estado">
+        <option value="Piaui"></option>
+        <option value="Maranhão"></option>
+        <option value="Rio Grande do Sul"></option>
+        <option value="MInas"></option>
+      </datalist></label>
+        
+        
+    </fieldset> 
+
+    <fieldset>
+      <legend>Mensagem o Usuario</legend>
+      <p><label for="Cran">Grau de Urgencia:Min<input type="range" id="Cran" min="0" max="100" step="5">Max</label></p>
+      <p><label for="cmsg">Mensagem: <textarea  id="cmsg" cols="45" rows="5" placeholder="Deixe sua Mensagem..."></textarea></label></p>
+    </fieldset>
+  </form>
+</body>
+</html>
